@@ -5,4 +5,31 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  color: rgb(65, 63, 63);
+  display: flex;
+
+  .banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex: 1;
+
+    .text-content {
+      width: 75%;
+    }
+  }
+  .banner-social {
+    flex: 2;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .social-icons * {
+      margin-left: 8px;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 }
