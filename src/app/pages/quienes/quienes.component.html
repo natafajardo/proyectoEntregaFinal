@@ -1,1 +1,50 @@
-<p>quienes works!</p>
+<section class="banner">
+
+</section>
+<section class="nosotros">
+    <div class="container">
+        <div class="nosotros-header">
+            <h2>Nuestro equipo</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatibus voluptatem quam beatae,
+                recusandae voluptatum optio, nulla minus non officia fuga sunt eveniet pariatur tempore natus maxime
+                possimus vero cumque?
+            </p>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col" *ngFor="let item of teams">
+                <div class="card">
+                    <img [src]="item.img" width="180" class="card-img-top" alt="...">
+
+                    <div class="card-footer">
+                        <span>{{item.name}}</span>
+                        <small class="text-muted">{{item.role}}</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="mision">
+    <div class="container">
+        <h2>Misión</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quia sunt earum odio. Placeat asperiores numquam
+        illum quidem, earum architecto, excepturi nam optio velit quos consequatur saepe iusto enim nemo.</p>
+    </div>
+    
+</section>
+
+<section class="vision">
+    <div class="container">
+        <h2>Visión</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quia sunt earum odio. Placeat asperiores numquam
+        illum quidem, earum architecto, excepturi nam optio velit quos consequatur saepe iusto enim nemo.</p>
+    </div>
+    
+</section>
