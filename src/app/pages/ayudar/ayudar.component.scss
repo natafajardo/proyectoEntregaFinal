@@ -1,0 +1,50 @@
+.banner {
+  background-color: #40569e;
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  .banner-text {
+    height: inherit;
+    width: 60%;
+
+    .text-content {
+      text-align: center;
+      padding: 50px 0;
+    }
+  }
+}
+.planes {
+  color: rgb(65, 63, 63);
+  margin-top: -120px;
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      text-align: center;
+      width: 270px;
+      margin: 0 40px;
+
+      .card-header {
+        padding: 15px 0;
+
+        .fa-child {
+          color: #0dcaf0;
+        }
+        .fa-donate {
+          color: #ffc107;
+        }
+      }
+
+      .card-footer {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 15px 0;
+      }
+    }
+  }
+}
