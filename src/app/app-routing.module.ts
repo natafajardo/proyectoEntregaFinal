@@ -6,7 +6,6 @@ import { DonarComponent } from './pages/ayudar/donar/donar.component';
 import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuienesComponent } from './pages/quienes/quienes.component';
-import { RegistroComponent } from './pages/registro/registro.component';
 
 const routes: Routes = [
   {
@@ -30,16 +29,16 @@ const routes: Routes = [
     component: DonacionesComponent
   },
   {
-    path: "registro",
-    component: RegistroComponent
-  },
-  {
     path: "apadrinar", 
     component: ApadrinarComponent
   },
   {
     path: "donar", 
     component: DonarComponent
+  },
+  {
+    path: "auth",
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   }
 ];
 

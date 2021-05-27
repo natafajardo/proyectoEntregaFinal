@@ -9,9 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { QuienesComponent } from './pages/quienes/quienes.component';
 import { AyudarComponent } from './pages/ayudar/ayudar.component';
 import { DonacionesComponent } from './pages/donaciones/donaciones.component';
-import { RegistroComponent } from './pages/registro/registro.component';
 import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
 import { DonarComponent } from './pages/ayudar/donar/donar.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,13 @@ import { DonarComponent } from './pages/ayudar/donar/donar.component';
     QuienesComponent,
     AyudarComponent,
     DonacionesComponent,
-    RegistroComponent,
     ApadrinarComponent,
     DonarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
