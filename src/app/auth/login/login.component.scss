@@ -1,0 +1,44 @@
+.contenedor {
+    display: flex;
+  
+    .left {
+      background: #40569e;
+      color: #fff;
+      height: 100vh;
+      padding: 20px;
+      position: relative;
+      width: 35%;
+  
+      .arrow {
+        background: #40569e;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 46%;
+        margin-right: -20px;
+      }
+  
+      .title {
+        margin: 40vh auto;
+        text-align: center;
+      }
+    }
+  
+    .right {
+      background: #fff;
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .login {
+        width: 40%;
+      }
+    }
+  }
+  
