@@ -10,6 +10,8 @@ import { QuienesComponent } from './pages/quienes/quienes.component';
 import { AyudarComponent } from './pages/ayudar/ayudar.component';
 import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
+import { DonarComponent } from './pages/ayudar/donar/donar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RegistroComponent } from './pages/registro/registro.component';
     QuienesComponent,
     AyudarComponent,
     DonacionesComponent,
-    RegistroComponent
+    RegistroComponent,
+    ApadrinarComponent,
+    DonarComponent
   ],
   imports: [
     BrowserModule,

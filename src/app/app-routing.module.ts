@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
 import { AyudarComponent } from './pages/ayudar/ayudar.component';
+import { DonarComponent } from './pages/ayudar/donar/donar.component';
 import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuienesComponent } from './pages/quienes/quienes.component';
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path: "registro",
     component: RegistroComponent
+  },
+  {
+    path: "apadrinar", 
+    component: ApadrinarComponent
+  },
+  {
+    path: "donar", 
+    component: DonarComponent
   }
 ];
 
