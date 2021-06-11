@@ -12,25 +12,25 @@
     </div>
     <div class="right">
     <div class="register">
-        <form>
+        <form [formGroup]="form" (ngSubmit)="submitForm()">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1">
+              <input type="email" [formControlName]="'correo'" class="form-control" id="exampleInputEmail1">
             </div>
             
             <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Nombre Completo</label>
-                <input type="text" class="form-control" id="exampleInputName">
+                <input type="text" [formControlName]="'nombre'" class="form-control" id="exampleInputName">
               </div>
 
               <div class="mb-3">
                 <label for="exampleInputUsername" class="form-label">Nombre de usuario</label>
-                <input type="text" class="form-control" id="exampleInputUsername">
+                <input type="text" [formControlName]="'nombreUsuario'" class="form-control" id="exampleInputUsername">
               </div>
 
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" [formControlName]="'pass'" class="form-control" id="exampleInputPassword1">
             </div>
             
             <button type="submit" class="btn btn-primary">Registrarse</button>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
 import { DonarComponent } from './pages/ayudar/donar/donar.component';
 import { AuthModule } from './auth/auth.module';
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { AuthModule } from './auth/auth.module';
     DonarComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     AuthModule,
