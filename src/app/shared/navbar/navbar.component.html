@@ -11,7 +11,10 @@
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/quienes-somos']">Quienes Somos</a>
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/como-ayudar']">¿Como puedo ayudar?</a>
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/donaciones']">Donaciones</a>
-      <a class="nav-link" routerLinkActive="active" [routerLink]="['/registro']">Registrate</a>
+      <a class="nav-link" routerLinkActive="active" [routerLink]="['/auth/register']" *ngIf="!isLogged">Registrate</a>
+      <a class="nav-link" routerLinkActive="active" [routerLink]="['/auth/login']" *ngIf="!isLogged">Login</a>
+      <button class="nav-link" (click)="logout()" *ngIf="isLogged">Logout</button>
+
     </div>
   </div>
 
