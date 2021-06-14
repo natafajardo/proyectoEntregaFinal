@@ -9,7 +9,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuienesComponent } from './pages/quienes/quienes.component';
 import { AyudarComponent } from './pages/ayudar/ayudar.component';
-import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
 import { DonarComponent } from './pages/ayudar/donar/donar.component';
 import { AuthModule } from './auth/auth.module';
@@ -24,7 +23,6 @@ import { AuthModule } from './auth/auth.module';
     HomeComponent,
     QuienesComponent,
     AyudarComponent,
-    DonacionesComponent,
     ApadrinarComponent,
     DonarComponent
   ],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
@@ -8,17 +9,17 @@ import { AuthService } from 'src/app/auth/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  isLogged: boolean;
+  isLoggedIn$: Observable<boolean>;
+  usuario: string = "Desconocido";
 
-  constructor(private auth: AuthService) { }
+  constructor(public auth: AuthService) { }
 
-  ngOnInit(): void {
-    this.isLogged = this.auth.isLogged();
+  ngOnInit(): void {    
+    this.usuario = JSON.parse(localStorage.getItem('current_user'))?.usuario;
   }
  
-  logout (){
-    this.auth.logout();
-    
+  logout() {
+    this.auth.doLogout();
   }
 
 }

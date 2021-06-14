@@ -28,11 +28,8 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     const body = this.form.getRawValue();
-    this.authService.login(body).subscribe((res: any) => {
-      console.log(res);
-      localStorage.setItem('token', res.token);
+    this.authService.doLogin(body).subscribe((res: any) => {
       this.form.reset();
-      this.router.navigate(['home']);
     });
   }
 }

@@ -4,16 +4,23 @@
       <img src="../../../assets/img/logo.png" alt="logo fundacion" width="200">
     </a>
 
-
-
     <div class="navbar-nav">
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/quienes-somos']">Quienes Somos</a>
       <a class="nav-link" routerLinkActive="active" [routerLink]="['/como-ayudar']">¿Como puedo ayudar?</a>
-      <a class="nav-link" routerLinkActive="active" [routerLink]="['/donaciones']">Donaciones</a>
-      <a class="nav-link" routerLinkActive="active" [routerLink]="['/auth/register']" *ngIf="!isLogged">Registrate</a>
-      <a class="nav-link" routerLinkActive="active" [routerLink]="['/auth/login']" *ngIf="!isLogged">Login</a>
-      <button class="nav-link" (click)="logout()" *ngIf="isLogged">Logout</button>
+      <a class="nav-link" routerLinkActive="active" [routerLink]="['/auth/login']" *ngIf="!this.auth.isLoggedIn">Entrar</a>
+
+      <div class="dropdown user-item" *ngIf="this.auth.isLoggedIn">
+        <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+          {{usuario}}
+        </a>
+      
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" [routerLink]="['/personal']"><i class="fas fa-user"></i> Area Personal</a></li>
+          <button class="dropdown-item" (click)="logout()" *ngIf="this.auth.isLoggedIn"><i class="fas fa-sign-out-alt"></i> Salir</button>
+        </ul>
+      </div>
+      
 
     </div>
   </div>
