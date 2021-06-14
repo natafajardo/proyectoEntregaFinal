@@ -12,6 +12,7 @@ import { AyudarComponent } from './pages/ayudar/ayudar.component';
 import { ApadrinarComponent } from './pages/ayudar/apadrinar/apadrinar.component';
 import { DonarComponent } from './pages/ayudar/donar/donar.component';
 import { AuthModule } from './auth/auth.module';
+import { PersonalComponent } from './pages/personal/personal.component';
 
 
 
@@ -24,7 +25,8 @@ import { AuthModule } from './auth/auth.module';
     QuienesComponent,
     AyudarComponent,
     ApadrinarComponent,
-    DonarComponent
+    DonarComponent,
+    PersonalComponent
   ],
   imports: [
     HttpClientModule,

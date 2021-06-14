@@ -26,7 +26,7 @@ export class AuthService {
   register(body) {
     return this.http.post(`${this.uri}/registrarUsuario`, body);
   }
-
+  
   doLogin(body) {
     return this.http.post(`${this.uri}/login`, body).pipe(
       map((res: any) => {
