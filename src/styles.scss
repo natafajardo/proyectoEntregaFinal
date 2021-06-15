@@ -5,3 +5,15 @@ body {
     color: #40569e;
     font-family: 'Lato', sans-serif;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #999;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+}
